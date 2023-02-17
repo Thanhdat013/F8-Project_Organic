@@ -15,15 +15,15 @@
     />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <header class="header grid">
       <div class="row header__nav">
-        <div class="header__nav-left l-7">
-          <div class="header__logo">
+        <div class="header__nav-left l-7 m-1">
+          <div class="header__logo hide-on-mobile-tablet">
             <a href="#!">
               <svg
                 class="header__logo-img"
@@ -130,7 +130,7 @@
               </svg>
             </a>
           </div>
-          <div class="header__menu">
+          <div class="header__menu hide-on-mobile-tablet">
             <ul class="header__menu-list">
               <li class="header__menu-item">
                 <a href="#!">Home</a>
@@ -172,8 +172,69 @@
               </li>
             </ul>
           </div>
+
+          <!-- Menu sort mobile and tablet -->
+          <label for="header__nav-check" class="header__menu-sort">
+            <i class="fa-solid fa-bars icon-logo"></i>
+          </label>
+
+          <input
+            hidden
+            type="checkbox"
+            name=""
+            id="header__nav-check"
+            class="header__nav-input"
+          />
+          <label for="header__nav-check" class="header__nav-overlay"></label>
+          <div class="header__nav-mobile">
+            <label for="header__nav-check" class="header__nav-close">
+              <i class="fa-solid fa-xmark header__nav-close-icon"></i>
+            </label>
+            <ul class="header__mobile-menu-list">
+              <li class="header__mobile-menu-item">
+                <a href="#!">Home</a>
+              </li>
+              <li class="header__mobile-menu-item">
+                <a href="#!"
+                  >About
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="header__mobile-submenu">
+                  <li class="header__mobile-submenu-item">
+                    <a href="">Service</a>
+                  </li>
+                  <li class="header__mobile-submenu-item">
+                    <a href="">Service Single</a>
+                  </li>
+                  <li class="header__mobile-submenu-item">
+                    <a href="">Portfolio</a>
+                  </li>
+                  <li class="header__mobile-submenu-item">
+                    <a href="">Team</a>
+                  </li>
+                  <li class="header__mobile-submenu-item">
+                    <a href="">Licenses</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__mobile-menu-item">
+                <a href="#!">Pages</a>
+              </li>
+              <li class="header__mobile-menu-item">
+                <a href="#!">Shop</a>
+              </li>
+              <li class="header__mobile-menu-item">
+                <a href="#!">Project</a>
+              </li>
+              <li class="header__mobile-menu-item">
+                <a href="#!">News</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="header__nav-right l-5">
+
+        <!--  -->
+        <div class="header__nav-right l-5 m-11">
           <div class="header__right-search">
             <div class="search__wrap">
               <div class="search__wrap-input">
@@ -190,7 +251,7 @@
             <div class="cart__icon">
               <i class="fa-solid fa-cart-shopping icon-logo"></i>
             </div>
-            <div class="cart__quantity">Cart (0)</div>
+            <div class="cart__quantity hide-on-mobile-tablet">Cart (0)</div>
           </div>
         </div>
       </div>
