@@ -32,6 +32,28 @@ a {
   cursor: pointer;
 }
 
+.btn {
+  width: 220px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-active {
+  background-color: var(--btn-color);
+}
+
+.title {
+  font-family: "Yellowtail", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
 /* ============================== Header ==================================*/
 
 .header__nav {
@@ -195,3 +217,113 @@ a {
 .header__nav-mobile {
   display: none;
 }
+
+/* ================ Home page ==================== */
+
+.home__banner {
+  height: 900px;
+  background-image: url(/assets/image/home__banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__banner-content {
+  padding: 246px 0 260px 246px;
+}
+.home__banner-title {
+  margin-bottom: 8px;
+  color: #68a47f;
+}
+
+.home__banner-desc {
+  margin-bottom: 23px;
+  width: 520px;
+  font-weight: 800;
+  font-size: 7rem;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+.home__banner-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__banner-btn-link {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.btn__icon-arrow {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  background-color: #274c5b;
+  color: var(--white-color);
+  border-radius: 50%;
+}
+
+/* =============== banner ================== */
+.banner__offer {
+  margin: 154px 260px 190px 260px;
+}
+.banner__offer-total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.banner__offer-left {
+  background-image: url(/assets/image/banner__offer-left.jpg);
+}
+
+.banner__offer-right {
+  background-image: url(/assets/image/banner__offer-right.jpg);
+}
+
+.banner__offer-left,
+.banner__offer-right {
+  padding: 0;
+  height: 367px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.banner__offer-wrap {
+  margin: 110px 0 110px 55px;
+}
+
+.banner__offer-left-title,
+.banner__offer-right-title {
+  margin-bottom: 5px;
+}
+
+.banner__offer-left-title,
+.banner__offer-left-desc {
+  color: var(--white-color);
+}
+.banner__offer-right-title {
+  color: var(--primary-heading-color);
+}
+
+.banner__offer-left-desc,
+.banner__offer-right-desc {
+  width: 260px;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 1.175;
+}
+
+.banner__offer-right-desc {
+  color: var(--primary-color);
+}
+
+/* ================ About ================= */

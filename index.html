@@ -14,7 +14,15 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
@@ -22,7 +30,7 @@
   <body>
     <header class="header grid">
       <div class="row header__nav">
-        <div class="header__nav-left l-7 m-1">
+        <div class="header__nav-left col l-7 m-1">
           <div class="header__logo hide-on-mobile-tablet">
             <a href="#!">
               <svg
@@ -192,49 +200,51 @@
             </label>
             <ul class="header__mobile-menu-list">
               <li class="header__mobile-menu-item">
-                <a href="#!">Home</a>
+                <a href="#!" class="header__mobile-link"> Home</a>
               </li>
               <li class="header__mobile-menu-item">
-                <a href="#!"
+                <a href="#!" class="header__mobile-link"
                   >About
                   <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul class="header__mobile-submenu">
                   <li class="header__mobile-submenu-item">
-                    <a href="">Service</a>
+                    <a href="" class="header__mobile-submenu-link">Service</a>
                   </li>
                   <li class="header__mobile-submenu-item">
-                    <a href="">Service Single</a>
+                    <a href="" class="header__mobile-submenu-link"
+                      >Service Single</a
+                    >
                   </li>
                   <li class="header__mobile-submenu-item">
-                    <a href="">Portfolio</a>
+                    <a href="" class="header__mobile-submenu-link">Portfolio</a>
                   </li>
                   <li class="header__mobile-submenu-item">
-                    <a href="">Team</a>
+                    <a href="" class="header__mobile-submenu-link">Team</a>
                   </li>
                   <li class="header__mobile-submenu-item">
-                    <a href="">Licenses</a>
+                    <a href="" class="header__mobile-submenu-link">Licenses</a>
                   </li>
                 </ul>
               </li>
               <li class="header__mobile-menu-item">
-                <a href="#!">Pages</a>
+                <a href="#!" class="header__mobile-link">Pages</a>
               </li>
               <li class="header__mobile-menu-item">
-                <a href="#!">Shop</a>
+                <a href="#!" class="header__mobile-link">Shop</a>
               </li>
               <li class="header__mobile-menu-item">
-                <a href="#!">Project</a>
+                <a href="#!" class="header__mobile-link">Project</a>
               </li>
               <li class="header__mobile-menu-item">
-                <a href="#!">News</a>
+                <a href="#!" class="header__mobile-link">News</a>
               </li>
             </ul>
           </div>
         </div>
 
         <!--  -->
-        <div class="header__nav-right l-5 m-11">
+        <div class="header__nav-right col l-5 m-11 hide-on-mobile">
           <div class="header__right-search">
             <div class="search__wrap">
               <div class="search__wrap-input">
@@ -256,5 +266,75 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <div class="home grid">
+        <!-- <div class="row col">
+          <div class="col"> -->
+        <div class="home__banner">
+          <div class="home__banner-content">
+            <h2 class="home__banner-title title">100% Natural Food</h2>
+            <p class="home__banner-desc">
+              Choose the best healthier way of life
+            </p>
+            <button class="btn btn-active">
+              <div class="home__banner-btn">
+                <a href="#!" class="home__banner-btn-link">Explore Now</a>
+                <i class="fa-solid fa-arrow-right btn__icon-arrow"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- </div>
+        </div> -->
+      </div>
+
+      <div class="banner grid">
+        <div class="row banner__offer">
+          <div class="banner__offer-total">
+            <div class="banner__offer-left title col l-6 m-12 c-12">
+              <div class="banner__offer-wrap">
+                <p class="banner__offer-left-title">Natural!!</p>
+                <p class="banner__offer-left-desc">Get Garden Fresh Fruits</p>
+              </div>
+            </div>
+            <div class="banner__offer-right title col l-6 m-12 c-12">
+              <div class="banner__offer-wrap">
+                <p class="banner__offer-right-title">Offer!!</p>
+                <p class="banner__offer-right-desc">
+                  Get 10% off on Vegetables
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about grid">
+        <div class="content row">
+          <div class="content__left col l-6">
+            <img src="" alt="" class="content__left-img" />
+          </div>
+          <div class="content__right col l-6">
+            <span class="content__right-about title">About Us</span>
+            <h2 class="content__right-title">
+              We Believe in Working Accredited Farmers
+            </h2>
+            <p class="content__right-desc">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </p>
+            <div class="content__right-info"></div>
+            <button class="btn">
+              <div class="home__banner-btn">
+                <a href="#!" class="content__right-btn-link">Shop now</a>
+                <i class="fa-solid fa-arrow-right btn__icon-arrow"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
