@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
 
@@ -30,7 +30,7 @@
   <body>
     <header class="header grid">
       <div class="row header__nav">
-        <div class="header__nav-left col l-7 m-1">
+        <div class="header__nav-left">
           <div class="header__logo hide-on-mobile-tablet">
             <a href="#!">
               <svg
@@ -141,42 +141,36 @@
           <div class="header__menu hide-on-mobile-tablet">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a href="#!">Home</a>
+                <a href="#!" class="header__menu-link">Home</a>
               </li>
               <li class="header__menu-item">
-                <a href="#!"
-                  >About
-                  <i class="fa-solid fa-chevron-down"></i>
+                <a href="#!" class="header__menu-link">About us </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" class="header__menu-link">Products</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" class="header__menu-link"
+                  >Pages
+                  <i class="fa-solid fa-chevron-down home__menu-icon"></i>
                 </a>
                 <ul class="header__submenu">
                   <li class="header__submenu-item">
-                    <a href="">Service</a>
+                    <a href="">Blog Grid</a>
                   </li>
                   <li class="header__submenu-item">
-                    <a href="">Service Single</a>
+                    <a href="">Our Features</a>
                   </li>
                   <li class="header__submenu-item">
-                    <a href="">Portfolio</a>
+                    <a href="">Testimonial</a>
                   </li>
                   <li class="header__submenu-item">
-                    <a href="">Team</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="">Licenses</a>
+                    <a href="">404 Page</a>
                   </li>
                 </ul>
               </li>
               <li class="header__menu-item">
-                <a href="#!">Pages</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="#!">Shop</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="#!">Project</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="#!">News</a>
+                <a href="#!" class="header__menu-link">Contact us</a>
               </li>
             </ul>
           </div>
@@ -203,32 +197,31 @@
                 <a href="#!" class="header__mobile-link"> Home</a>
               </li>
               <li class="header__mobile-menu-item">
+                <a href="#!" class="header__mobile-link">About </a>
+              </li>
+              <li class="header__mobile-menu-item">
                 <a href="#!" class="header__mobile-link"
-                  >About
+                  >Pages
                   <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul class="header__mobile-submenu">
                   <li class="header__mobile-submenu-item">
-                    <a href="" class="header__mobile-submenu-link">Service</a>
+                    <a href="" class="header__mobile-submenu-link">Blog grid</a>
                   </li>
                   <li class="header__mobile-submenu-item">
                     <a href="" class="header__mobile-submenu-link"
-                      >Service Single</a
+                      >Our features</a
                     >
                   </li>
                   <li class="header__mobile-submenu-item">
-                    <a href="" class="header__mobile-submenu-link">Portfolio</a>
+                    <a href="" class="header__mobile-submenu-link"
+                      >Testimonial</a
+                    >
                   </li>
                   <li class="header__mobile-submenu-item">
-                    <a href="" class="header__mobile-submenu-link">Team</a>
-                  </li>
-                  <li class="header__mobile-submenu-item">
-                    <a href="" class="header__mobile-submenu-link">Licenses</a>
+                    <a href="" class="header__mobile-submenu-link">404 Page</a>
                   </li>
                 </ul>
-              </li>
-              <li class="header__mobile-menu-item">
-                <a href="#!" class="header__mobile-link">Pages</a>
               </li>
               <li class="header__mobile-menu-item">
                 <a href="#!" class="header__mobile-link">Shop</a>
@@ -244,7 +237,7 @@
         </div>
 
         <!--  -->
-        <div class="header__nav-right col l-5 m-11 hide-on-mobile">
+        <div class="header__nav-right hide-on-mobile">
           <div class="header__right-search">
             <div class="search__wrap">
               <div class="search__wrap-input">
@@ -291,47 +284,98 @@
 
       <div class="banner grid">
         <div class="row banner__offer">
-          <div class="banner__offer-total">
-            <div class="banner__offer-left title col l-6 m-12 c-12">
-              <div class="banner__offer-wrap">
-                <p class="banner__offer-left-title">Natural!!</p>
-                <p class="banner__offer-left-desc">Get Garden Fresh Fruits</p>
-              </div>
+          <div class="banner__offer-left">
+            <img
+              src="./assets/image/banner__offer-left.jpg"
+              alt=""
+              class="banner__offer-img"
+            />
+            <div class="banner__content text-above col l-6">
+              <h3 class="banner__content-left-title title">Natural!!</h3>
+              <p class="banner__content-left-desc">Get Garden Fresh Food</p>
             </div>
-            <div class="banner__offer-right title col l-6 m-12 c-12">
-              <div class="banner__offer-wrap">
-                <p class="banner__offer-right-title">Offer!!</p>
-                <p class="banner__offer-right-desc">
-                  Get 10% off on Vegetables
-                </p>
-              </div>
+          </div>
+          <div class="banner__offer-right">
+            <img
+              src="./assets/image/banner__offer-right.jpg"
+              alt=""
+              class="banner__offer-img"
+            />
+            <div class="banner__content text-above col l-6">
+              <h3 class="banner__content-right-title title">Offer!!</h3>
+              <p class="banner__content-right-desc">
+                Get 10% off on Vegetables
+              </p>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- About us -->
+
       <div class="about grid">
-        <div class="content row">
-          <div class="content__left col l-6">
-            <img src="" alt="" class="content__left-img" />
-          </div>
-          <div class="content__right col l-6">
-            <span class="content__right-about title">About Us</span>
-            <h2 class="content__right-title">
-              We Believe in Working Accredited Farmers
-            </h2>
-            <p class="content__right-desc">
-              Simply dummy text of the printing and typesetting industry. Lorem
-              had ceased to been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley.
-            </p>
-            <div class="content__right-info"></div>
-            <button class="btn">
-              <div class="home__banner-btn">
-                <a href="#!" class="content__right-btn-link">Shop now</a>
-                <i class="fa-solid fa-arrow-right btn__icon-arrow"></i>
+        <div class="about__wrap">
+          <div class="about__content text-above row">
+            <img
+              src="./assets/image/carousel-2.jpg"
+              alt=""
+              class="about__content-img"
+            />
+            <div class="about__content-info text-above col l-6">
+              <span class="about__content-info-head title">About Us</span>
+              <h2 class="about__content-info-title">
+                We Believe in Working Accredited Farmers
+              </h2>
+              <p class="about__content-info-desc">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem had ceased to been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley.
+              </p>
+
+              <div class="about__points">
+                <div class="about__points-wrap">
+                  <img
+                    src="./assets/image/banner__offer-left.jpg"
+                    alt=""
+                    class="about__points-wrap-img"
+                  />
+                  <div class="about__points-wrap-info">
+                    <strong class="about__points-wrap-title"
+                      >Organic Foods Only</strong
+                    >
+                    <p class="about__points-wrap-desc">
+                      Simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum
+                    </p>
+                  </div>
+                </div>
+                <div class="about__points-wrap">
+                  <img
+                    src="./assets/image/banner__offer-right.jpg"
+                    alt=""
+                    class="about__points-wrap-img"
+                  />
+                  <div class="about__points-wrap-info">
+                    <strong class="about__points-wrap-title"
+                      >Quality Standards</strong
+                    >
+                    <p class="about__points-wrap-desc">
+                      Simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum
+                    </p>
+                  </div>
+                </div>
               </div>
-            </button>
+
+              <div class="about__button">
+                <button class="about__button-btn btn">
+                  <a href="" class="about__button-link">Shop now</a>
+                  <i
+                    class="fa-solid fa-arrow-right about__button-link-arrow btn__icon-arrow"
+                  ></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
