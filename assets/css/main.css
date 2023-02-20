@@ -51,6 +51,7 @@ a {
   font-family: "Yellowtail", sans-serif;
   font-size: 3.6rem;
   font-weight: 400;
+  color: var(--primary-heading-color);
 }
 
 .text-above {
@@ -422,4 +423,127 @@ a {
 .about__button-link-arrow {
   margin-left: 10px;
   background-color: #335b6b;
+}
+
+/* ===================== Products ===================== */
+
+.products {
+  margin: 160px 0 200px;
+}
+
+.products__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.products__intro-desc {
+  margin: 8px 0 40px;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #274c5b;
+}
+
+.products__list {
+  gap: 20px 0;
+}
+
+.products__item {
+  position: relative;
+  height: 460px;
+  background-color: #f9f8f8;
+  border-radius: 16px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  border: solid 1px #ddd;
+}
+
+.products__item-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  width: 96px;
+  height: 31px;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+}
+
+.products__item-category-img {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+.product__list-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.products__item-info {
+  margin: 12px 31px 0;
+}
+
+.products__item-info-title {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.products__item-info-price::before {
+  position: absolute;
+  display: block;
+  content: "";
+  border-bottom: solid 1px #ccc;
+  width: 100%;
+  top: -50%;
+}
+
+.products__item-info-price {
+  position: relative;
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products__price {
+  gap: 8px;
+}
+
+.products__price-remove {
+  position: relative;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #b8b8b8;
+}
+.products__price-remove::before {
+  position: absolute;
+  display: block;
+  content: "";
+  border-bottom: solid 1px #ccc;
+  width: 100%;
+  top: 50%;
+}
+
+.products__price-discount {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.products__rate-start {
+  color: #ffa858;
 }
